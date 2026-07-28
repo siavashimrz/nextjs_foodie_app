@@ -7,7 +7,7 @@ export default function ImagePicker({ label, name }) {
   const [imagePicked, setImagePicked] = useState();
   const imageInputRef = useRef();
 
-  function handlePickClic() {
+  function handlePickClick() {
     imageInputRef.current.click();
   }
 
@@ -39,6 +39,7 @@ export default function ImagePicker({ label, name }) {
           accept="image/png, image/jpeg"
           ref={imageInputRef}
           onChange={handleInputChange}
+          required
         />
         <div className={classes.preview}>
           {imagePicked ? (
@@ -50,7 +51,7 @@ export default function ImagePicker({ label, name }) {
         <button
           type="button"
           className={classes.button}
-          onClick={handlePickClic}
+          onClick={handlePickClick}
         >
           {imagePicked ? "Change the Image" : "Pick an Image"}
         </button>
