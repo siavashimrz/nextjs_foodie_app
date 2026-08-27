@@ -20,7 +20,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.10"
   },
-  "allowScripts": [
-  "better-sqlite3@12.11.1"
-]
+  "allowScripts": {
+  "better-sqlite3@12.11.1": true
+  }
 }
