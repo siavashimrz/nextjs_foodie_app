@@ -21,6 +21,6 @@
     "eslint-config-next": "16.2.10"
   },
   "allowScripts": [
-    "better-sqlite3"
-  ]
+  "better-sqlite3@12.11.1"
+]
 }
